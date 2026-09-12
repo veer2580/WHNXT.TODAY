@@ -1,0 +1,1015 @@
+/* ==========================================================================
+   WHNXT.TODAY - DEDICATED SUBPAGES STYLESHEET (ABOUT & CONTACT)
+   Consistent 1:1 cosmic minimalist aesthetic matching the reference PDF
+   ========================================================================== */
+
+/* ================= SUBPAGE HEADER ================= */
+.subpage-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.8rem 2rem;
+  background: rgba(0, 1, 4, 0.75);
+  backdrop-filter: blur(16px);
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.subpage-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subpage-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-item {
+  color: #94a3b8;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+/* ================= SUBPAGE LAYOUT ================= */
+/* ==========================================================================
+   ABOUT US PAGE — 1:1 PIXEL-FAITHFUL TO USER MOCKUP & COSMIC THEME
+   ========================================================================== */
+
+.about-page-body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  overflow-x: hidden;
+}
+
+.about-page-main {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* 1. Sub-Header Branding Bar */
+.about-sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.35rem 0.9rem;
+  background: rgba(10, 20, 36, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.about-badge-tag:hover {
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+}
+
+.about-hero-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.3rem;
+}
+
+.about-hero-logo .logo-text {
+  font-family: var(--font-mono);
+  font-size: clamp(1.4rem, 2.5vw, 2.1rem);
+  letter-spacing: 0.45em;
+  color: #ffffff;
+  font-weight: 300;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.35);
+}
+
+.about-hero-logo .logo-sub {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.35em;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.btn-enter-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 1.4rem;
+  background: rgba(8, 14, 28, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+
+.btn-enter-tag:hover {
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
+  transform: translateY(-1px);
+}
+
+/* 2. Section 1: Hero Grid (Left Copy + Right Earth Sunrise) */
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.section-label-bar {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.about-main-headline {
+  font-family: var(--font-mono);
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.about-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #94a3b8;
+  font-weight: 300;
+}
+
+.about-paragraphs strong {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.about-paragraphs .accent-para {
+  color: #e2e8f0;
+  border-left: 2px solid var(--color-cyan);
+  padding-left: 1rem;
+  margin: 0.4rem 0;
+}
+
+.about-hero-graphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.earth-visual-wrap {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9), 0 0 40px rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.earth-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.earth-visual-wrap:hover .earth-img {
+  transform: scale(1.03);
+}
+
+/* 3. Section 2: OUR APPROACH Flow */
+.about-approach-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.approach-label-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.approach-rule {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  flex: 1;
+  max-width: 160px;
+}
+
+.approach-label-text {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.32em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.approach-flow-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 2.5rem 2rem;
+  background: rgba(6, 10, 20, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
+}
+
+.approach-node {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+}
+
+.node-icon-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: rgba(14, 24, 44, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.08);
+}
+
+.approach-node:hover .node-icon-circle {
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.35);
+  transform: translateY(-2px);
+  color: var(--color-cyan);
+}
+
+.node-svg {
+  width: 32px;
+  height: 32px;
+}
+
+.node-name {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.node-text {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: #94a3b8;
+  max-width: 170px;
+}
+
+.node-connector-arrow {
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+}
+
+/* 4. Section 3: Dual Layout (OUR BELIEF & ABOUT THE FOUNDER) */
+.about-dual-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* Left: Belief Panel */
+.belief-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background: rgba(6, 10, 20, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+}
+
+.belief-headline {
+  font-family: var(--font-mono);
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 400;
+  line-height: 1.28;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.belief-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.belief-body strong {
+  color: #ffffff;
+}
+
+.belief-terrain-graphic {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.terrain-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Right: Founder Panel */
+.founder-panel {
+  padding: 2.5rem;
+  background: rgba(6, 10, 20, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+}
+
+.founder-card-inner {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.founder-hero-name {
+  font-family: var(--font-mono);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+.founder-designations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1.4rem;
+}
+
+.desig-item {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--color-cyan);
+}
+
+.founder-story {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: #94a3b8;
+  margin-bottom: 1.6rem;
+}
+
+.founder-quote-box {
+  font-family: var(--font-sans);
+  font-style: italic;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #38bdf8;
+  border-left: 2px solid var(--color-cyan);
+  padding-left: 1rem;
+}
+
+.quote-mark {
+  color: var(--color-cyan);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.founder-visual-col {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Placed at the upper side */
+  position: sticky;
+  top: 5.5rem;
+  margin-top: 0.2rem;
+}
+
+.founder-photo-card {
+  width: 100%;
+  max-width: 330px;
+  border-radius: 12px;
+  overflow: visible;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.founder-photo-card::before {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.16) 0%, rgba(56, 189, 248, 0.06) 45%, transparent 70%);
+  filter: blur(35px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.veer-photo {
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  display: block;
+  object-fit: contain; /* 100% full photo, not cropped */
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 25px rgba(0, 229, 255, 0.2));
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.founder-photo-card:hover .veer-photo {
+  transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 35px rgba(0, 229, 255, 0.35));
+}
+
+/* 5. Section 4: BUILT FOR WHAT COMES NEXT (Bottom Banner) */
+.built-next-section {
+  width: 100%;
+  padding: 2.2rem 2.5rem;
+  background: rgba(6, 10, 20, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+}
+
+.built-flex-container {
+  display: grid;
+  grid-template-columns: 180px 1.4fr 1fr;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.built-solar-wrap {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.solar-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.built-headline {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.built-body {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+.built-actions-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 1.8rem;
+}
+
+.built-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.built-action:hover {
+  transform: translateY(-2px);
+}
+
+.built-action:hover .action-svg {
+  color: var(--color-cyan);
+  filter: drop-shadow(0 0 8px var(--color-cyan));
+}
+
+.action-svg {
+  width: 24px;
+  height: 24px;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.action-text {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* 6. Section 5: Footer Block */
+.about-footer-block {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.5rem 0 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.foot-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.foot-logo-title {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  letter-spacing: 0.35em;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.foot-logo-sub {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.28em;
+  color: #64748b;
+}
+
+.foot-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+}
+
+.foot-social-row {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.foot-social-btn {
+  color: #94a3b8;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.foot-social-btn:hover {
+  color: var(--color-cyan);
+  transform: translateY(-2px);
+}
+
+.foot-copy {
+  font-size: 0.72rem;
+  color: #64748b;
+  letter-spacing: 0.04em;
+}
+
+.foot-subcolophon {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.foot-right-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
+
+.foot-nav-item {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  transition: all 0.25s ease;
+}
+
+.foot-nav-item:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE DESIGN FOR ABOUT PAGE ================= */
+@media (max-width: 1024px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-dual-layout {
+    grid-template-columns: 1fr;
+  }
+  .built-flex-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .built-actions-wrap {
+    border-left: none;
+    padding-left: 0;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .about-footer-block {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .foot-right-nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .approach-flow-card {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  .node-connector-arrow {
+    transform: rotate(90deg);
+  }
+  .founder-card-inner {
+    grid-template-columns: 1fr;
+  }
+  .founder-visual-col {
+    order: -1;
+    margin-bottom: 1.5rem;
+    position: static;
+  }
+  .about-sub-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* ================= GLASS PANEL CARDS (SHARED) ================= */
+.glass-panel-card {
+  background: rgba(8, 12, 22, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2.2rem;
+  backdrop-filter: blur(24px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(56, 189, 248, 0.05);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-panel-card:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(56, 189, 248, 0.12);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   CONTACT US PAGE - DUAL MODULE
+   ========================================================================== */
+.contact-dual-section {
+  width: 100%;
+}
+
+.contact-dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.booking-modal-card.in-grid {
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+/* Transmission Form Card */
+.inquiry-form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.9rem;
+}
+
+.card-tag {
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  color: #94a3b8;
+  font-family: var(--font-mono);
+}
+
+.card-status-dot {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--color-cyan);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-status-dot::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-cyan);
+  box-shadow: 0 0 8px var(--color-cyan);
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: #94a3b8;
+  font-family: var(--font-mono);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(10, 16, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 16px rgba(0, 229, 255, 0.25);
+  background: rgba(12, 22, 42, 0.7);
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+/* Domain Selection Pills */
+.domain-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.domain-pill {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 0.35rem 0.85rem;
+  color: #94a3b8;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.domain-pill:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.domain-pill.active {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: var(--color-ice-blue);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+}
+
+.btn-transmit-inquiry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.9rem;
+  background: rgba(10, 18, 32, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.btn-transmit-inquiry:hover {
+  background: rgba(0, 229, 255, 0.18);
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.4);
+}
+
+/* Success State */
+.form-success-state {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem 1rem;
+}
+
+.success-ring {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--color-cyan);
+  color: var(--color-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+.success-title {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.success-desc {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  max-width: 380px;
+}
+
+/* Global Nodes Grid */
+.nodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.node-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.node-loc {
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  color: var(--color-cyan);
+}
+
+.node-city {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.node-coord {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #64748b;
+  letter-spacing: 0.08em;
+}
+
+.node-focus {
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  color: #94a3b8;
+  margin-top: 0.4rem;
+}
+
+/* Subpage Footer */
+.subpage-footer {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 3.5rem 2rem 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  background: rgba(0, 1, 4, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-dual-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .subpage-main {
+    padding: 3rem 1.5rem;
+    gap: 4rem;
+  }
+}
