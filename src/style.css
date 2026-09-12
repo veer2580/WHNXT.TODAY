@@ -552,7 +552,7 @@ html, body {
 /* Panels Container */
 .panels-container {
   width: 100%;
-  max-width: 760px;
+  max-width: 860px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -567,7 +567,7 @@ html, body {
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   position: relative;
-  padding: 3.5rem 1.5rem;
+  padding: 3.5rem 1rem;
   transition: background 0.4s ease;
 }
 
@@ -603,11 +603,15 @@ html, body {
 .panel-heading {
   font-family: var(--font-mono);
   font-weight: 300;
-  font-size: clamp(1.6rem, 3.2vw, 2.5rem);
-  letter-spacing: 0.45em;
+  font-size: clamp(1.3rem, 2.6vw, 2.2rem);
+  letter-spacing: clamp(0.2em, 0.4vw, 0.42em);
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: normal;
   color: #ffffff;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
   will-change: transform, opacity, filter;
+  max-width: 100%;
 }
 
 .panel-see-next {
@@ -619,7 +623,9 @@ html, body {
   font-family: var(--font-mono);
   font-weight: 400;
   font-size: clamp(0.95rem, 1.8vw, 1.35rem);
-  letter-spacing: 0.38em;
+  letter-spacing: clamp(0.2em, 0.35vw, 0.38em);
+  white-space: nowrap;
+  word-break: keep-all;
   color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;

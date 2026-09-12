@@ -24,16 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
       gsap.fromTo(heading, 
         {
           opacity: 0,
-          y: 40,
-          filter: 'blur(10px)',
-          letterSpacing: '0.62em'
+          y: 35,
+          filter: 'blur(8px)'
         },
         {
           opacity: 1,
           y: 0,
           filter: 'blur(0px)',
-          letterSpacing: '0.45em',
-          duration: 1.2,
+          duration: 1.1,
           ease: 'power2.out',
           scrollTrigger: {
             trigger: panel,
