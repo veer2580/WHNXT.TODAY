@@ -1,3 +1,4 @@
 # Canonical clean URL redirects for WHNXT.TODAY
+/journey.html /journey 301
 /about.html /about 301
 /contact.html /contact 301
