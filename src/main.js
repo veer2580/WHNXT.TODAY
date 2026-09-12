@@ -30,6 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Handle direct hash navigation e.g. from /about -> /#page-2
+  if (window.location.hash) {
+    setTimeout(() => {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 200);
+  }
+
   const navHome = document.querySelector('.universal-nav-link[data-nav="home"]');
   const navJourney = document.querySelector('.universal-nav-link[data-nav="journey"]');
   const navContact = document.querySelector('.universal-nav-link[data-nav="contact"]');
