@@ -186,14 +186,13 @@ html, body {
    PAGE 1: HERO / LANDING (Spacious PDF Page 1 Proportions)
    ========================================================================== */
 .page-1-view {
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: clamp(1400px, 175vh, 2200px);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 5rem 2rem 3rem 2rem;
   position: relative;
   box-sizing: border-box;
 }
@@ -204,9 +203,9 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* THE EXPANSIVE SPACE DEMANDED BY THE USER'S GREEN ARROW */
-  margin-top: clamp(6rem, 22vh, 26rem);
-  margin-bottom: clamp(3.5rem, 10vh, 12rem);
+  /* Logo shifted further upward — double the previous shift */
+  margin-top: clamp(6rem, 24vh, 19rem);
+  margin-bottom: clamp(18rem, 42vh, 45rem);
   position: relative;
   z-index: 5;
 }
