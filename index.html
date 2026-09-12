@@ -20,6 +20,7 @@
   <!-- Universal Top Header (Same on EVERY page) -->
   <header class="universal-header">
     <div class="universal-header-inner">
+      <div class="universal-header-left"></div>
       <a href="/" class="brand-badge" id="badge-top" aria-label="Return to WHNXT Home">
         <span class="badge-glyph">×</span>
         <span class="badge-letter">₸</span>
@@ -36,27 +37,13 @@
   </header>
 
   <!-- Page Views Container -->
-  <div class="site-wrapper">
+  <div class="site-wrapper home-site-wrapper">
 
-    <!-- ================= PAGE 1: HERO / LANDING (Exact from PDF Page 1) ================= -->
+    <!-- ================= PAGE 1: HERO / LANDING (Spacious PDF Page 1 Proportions) ================= -->
     <section class="page-view page-1-view" id="page-1">
 
-      <!-- Center Typography & Call to Action -->
-      <div class="p1-center-stage">
-        <!-- Sci-Fi Telemetry Micro-HUD -->
-        <div class="cosmic-telemetry-hud" aria-hidden="true">
-          <div class="hud-item">
-            <span class="hud-pulse-dot"></span>
-            <span class="hud-mono">SECTOR: 07-OMEGA // DEEP SKY OBSERVATORY</span>
-          </div>
-          <div class="hud-item hide-mobile">
-            <span class="hud-mono text-dim">FREQ: <span class="text-cyan">1420.405 MHz</span></span>
-          </div>
-          <div class="hud-item hide-mobile">
-            <span class="hud-mono text-dim">COHERENCE: <span class="text-cyan">99.98%</span></span>
-          </div>
-        </div>
-
+      <!-- Center Logo Stage with Vast Cosmic Void Above & Below -->
+      <div class="p1-hero-center">
         <h1 class="whnxt-logo-title" id="whnxt-hero-title">
           <span class="char">W</span>
           <span class="char">H</span>
@@ -70,77 +57,76 @@
           <span class="char glyph-a">Λ</span>
           <span class="char">Y</span>
         </h1>
+      </div>
+
+      <!-- Lower Horizon Stage (CTA, Earth Sunrise Horizon & Footer) -->
+      <div class="p1-lower-stage">
 
         <!-- Action Button: ENTER WHNXT.TODAY with sleek underline linking to /journey -->
         <div class="p1-action-wrap">
-          <a href="/journey" class="btn-enter-whnxt" id="btn-enter-whnxt">
-            <span class="btn-shine"></span>
-            <span class="btn-text">ENTER WHNXT.TODAY</span>
-            <svg class="btn-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="4" y1="12" x2="20" y2="12"></line>
-              <polyline points="14 6 20 12 14 18"></polyline>
-            </svg>
+          <a href="/journey" class="btn-enter-whnxt-classic" id="btn-enter-whnxt">
+            <span class="btn-text-row">
+              <span class="btn-text">ENTER WHNXT.TODAY</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <polyline points="14 6 20 12 14 18"></polyline>
+              </svg>
+            </span>
+            <span class="btn-classic-underline"></span>
           </a>
         </div>
+
+        <!-- Atmospheric Curved Earth Sunrise Horizon Image & Glow -->
+        <div class="p1-sunrise-horizon-wrap">
+          <img src="/earth-sunrise.jpg" alt="Orbital Sunrise Horizon" class="p1-sunrise-horizon-img">
+          <div class="p1-horizon-lensflare"></div>
+        </div>
+
+        <!-- Page 1 Bottom Area (Directly below curved horizon) -->
+        <footer class="p1-footer">
+          <div class="p1-footer-links">
+            <a href="/about" class="p1-link">Scientific Advisory Board</a>
+            <a href="/contact" class="p1-link">Privacy Policy</a>
+            <a href="/contact" class="p1-link">Terms of Use</a>
+            <a href="/contact" class="p1-link">Cookie Policy</a>
+          </div>
+
+          <div class="p1-social-icons">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <!-- X (Twitter) -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="20" rx="4" ry="4"></rect>
+                <line x1="8" y1="11" x2="8" y2="17"></line>
+                <line x1="8" y1="8" x2="8.01" y2="8"></line>
+                <path d="M12 17v-3.5a2.5 2.5 0 0 1 5 0V17"></path>
+                <line x1="12" y1="11" x2="12" y2="17"></line>
+              </svg>
+            </a>
+          </div>
+
+          <div class="p1-copyright">
+            <p>© 2026 Futuhr. All rights reserved.</p>
+            <p class="sub-colophon">A ANTELLAY LABS • A Celebso Group</p>
+          </div>
+
+          <span class="p1-page-num" aria-hidden="true">1</span>
+        </footer>
+
       </div>
-
-      <!-- Live Quantum Signal Spectral HUD (Pure CSS & SVG Animation) -->
-      <div class="cosmic-signal-ticker" aria-hidden="true">
-        <div class="ticker-spectrum">
-          <span class="spec-bar b-1"></span>
-          <span class="spec-bar b-2"></span>
-          <span class="spec-bar b-3"></span>
-          <span class="spec-bar b-4"></span>
-          <span class="spec-bar b-5"></span>
-          <span class="spec-bar b-6"></span>
-        </div>
-        <span class="ticker-label">QUANTUM TELEMETRY ACTIVE</span>
-        <span class="ticker-coords hide-mobile">RA 19h 50m 47s • DEC +08° 52' 06"</span>
-      </div>
-
-      <!-- Page 1 Bottom Area (Directly above & below curved horizon) -->
-      <footer class="p1-footer">
-        <div class="p1-footer-links">
-          <a href="/about" class="p1-link">Scientific Advisory Board</a>
-          <a href="/about" class="p1-link">About Us</a>
-          <a href="/contact" class="p1-link">Contact Us</a>
-          <a href="/contact" class="p1-link">Privacy Policy</a>
-          <a href="/contact" class="p1-link">Terms of Use</a>
-          <a href="/contact" class="p1-link">Cookie Policy</a>
-        </div>
-
-        <div class="p1-social-icons">
-          <!-- Instagram -->
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <circle cx="12" cy="12" r="4"></circle>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </a>
-          <!-- X (Twitter) -->
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
-          </a>
-          <!-- LinkedIn -->
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8">
-              <rect x="2" y="2" width="20" height="20" rx="4" ry="4"></rect>
-              <line x1="8" y1="11" x2="8" y2="17"></line>
-              <line x1="8" y1="8" x2="8.01" y2="8"></line>
-              <path d="M12 17v-3.5a2.5 2.5 0 0 1 5 0V17"></path>
-              <line x1="12" y1="11" x2="12" y2="17"></line>
-            </svg>
-          </a>
-        </div>
-
-        <div class="p1-copyright">
-          <p>© 2026 Futuhr. All rights reserved.</p>
-          <p class="sub-colophon">A ANTELLAY LABS • A Celebso Group</p>
-        </div>
-      </footer>
     </section>
 
   </div>

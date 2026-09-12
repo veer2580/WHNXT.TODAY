@@ -65,25 +65,35 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.6rem 2.5rem;
+  padding: 1.4rem 2.5rem;
   background: rgba(0, 2, 8, 0.72);
   backdrop-filter: blur(20px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .universal-header-inner {
-  max-width: 1150px;
+  max-width: 1320px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
+}
+
+.universal-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.universal-header .brand-badge {
+  justify-self: center;
 }
 
 .universal-nav {
   display: flex;
   align-items: center;
   gap: 2.2rem;
+  justify-self: end;
 }
 
 .universal-nav-link {
@@ -173,27 +183,35 @@ html, body {
 }
 
 /* ==========================================================================
-   PAGE 1: HERO / LANDING
+   PAGE 1: HERO / LANDING (Spacious PDF Page 1 Proportions)
    ========================================================================== */
 .page-1-view {
-  min-height: calc(100vh - 5rem);
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 2rem 2rem 3rem 2rem;
+  align-items: center;
+  padding: 5rem 2rem 2rem 2rem;
+  position: relative;
+  box-sizing: border-box;
 }
 
-.p1-center-stage {
-  flex: 1;
+.p1-hero-center {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3.2rem;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  /* THE EXPANSIVE SPACE DEMANDED BY THE USER'S GREEN ARROW */
+  margin-top: clamp(6rem, 22vh, 26rem);
+  margin-bottom: clamp(3.5rem, 10vh, 12rem);
   position: relative;
+  z-index: 5;
 }
 
-.p1-center-stage::before {
+.p1-hero-center::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -211,6 +229,115 @@ html, body {
 @keyframes cosmicAuraPulse {
   0% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.96); }
   100% { opacity: 1.0; transform: translate(-50%, -50%) scale(1.04); }
+}
+
+/* ================= LOWER STAGE (HORIZON + CTA + FOOTER) ================= */
+.p1-lower-stage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+/* Classic Elegant Underlined CTA: ENTER WHNXT.TODAY → */
+.btn-enter-whnxt-classic {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f1f5f9;
+  font-family: var(--font-mono);
+  font-size: clamp(0.78rem, 1.2vw, 0.88rem);
+  letter-spacing: 0.28em;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  position: relative;
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  margin-bottom: -1rem;
+}
+
+.btn-enter-whnxt-classic .btn-text-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-enter-whnxt-classic .btn-classic-underline {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transition: all 0.35s ease;
+}
+
+.btn-enter-whnxt-classic:hover {
+  color: #ffffff;
+  text-shadow: 0 0 16px rgba(255, 255, 255, 0.9);
+}
+
+.btn-enter-whnxt-classic:hover .btn-classic-underline {
+  background: linear-gradient(90deg, transparent, var(--color-cyan), transparent);
+  box-shadow: 0 0 8px var(--color-cyan);
+}
+
+.btn-enter-whnxt-classic .btn-arrow {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #94a3b8;
+}
+
+.btn-enter-whnxt-classic:hover .btn-arrow {
+  transform: translateX(5px);
+  color: var(--color-cyan);
+}
+
+/* Atmospheric Curved Earth Sunrise Horizon Image & Glow */
+.p1-sunrise-horizon-wrap {
+  position: relative;
+  width: min(92vw, 640px);
+  height: clamp(65px, 11vh, 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem 0 1.4rem 0;
+  overflow: hidden;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.p1-sunrise-horizon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  mask-image: radial-gradient(ellipse 70% 55% at 50% 35%, #000 25%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 55% at 50% 35%, #000 25%, transparent 85%);
+  filter: brightness(1.2) contrast(1.15);
+  opacity: 0.95;
+}
+
+.p1-horizon-lensflare {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 70px;
+  background: radial-gradient(ellipse at center, rgba(255, 200, 100, 0.5) 0%, rgba(255, 140, 40, 0.2) 40%, transparent 75%);
+  pointer-events: none;
+  filter: blur(14px);
+}
+
+/* Page 1 corner number */
+.p1-page-num {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #334155;
+  user-select: none;
 }
 
 /* ================= COSMIC TELEMETRY HUD ================= */
@@ -446,9 +573,9 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.8rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  gap: 1.4rem;
+  padding-top: 0.5rem;
+  border-top: none;
 }
 
 .p1-footer-links {
