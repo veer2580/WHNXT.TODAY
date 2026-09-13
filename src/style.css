@@ -80,7 +80,8 @@ html, body {
   align-items: center;
 }
 
-.universal-header-left {
+.universal-header-left,
+.universal-header-right {
   display: flex;
   align-items: center;
 }
@@ -238,6 +239,51 @@ html, body {
   align-items: center;
   position: relative;
   z-index: 5;
+}
+
+/* Mid-Screen Navigation Links (JOURNEY, ABOUT, CONTACT in ss2 middle area) */
+.p1-mid-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2.5rem, 5vw, 4.2rem);
+  margin-bottom: clamp(2rem, 4vh, 3.2rem);
+  position: relative;
+  z-index: 10;
+}
+
+.p1-mid-nav-link {
+  color: #94a3b8;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: clamp(0.85rem, 1.2vw, 0.96rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.4rem 0.2rem;
+  transition: all 0.3s ease;
+}
+
+.p1-mid-nav-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 16px rgba(0, 229, 255, 0.9);
+}
+
+.p1-mid-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1.5px;
+  background: var(--color-cyan, #00e5ff);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.p1-mid-nav-link:hover::after {
+  width: 100%;
 }
 
 /* Classic Elegant Underlined CTA: ENTER WHNXT.TODAY → */
